@@ -71,6 +71,8 @@ public class DriverInstance extends Drivertools {
 		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
 //		capabilities.setCapability("compressXml", "true");
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+		capabilities.setCapability(MobileCapabilityType.UDID, "5200428f464ca5a7");
+
 		capabilities.setCapability("fullReset", false);
 		capabilities.setCapability("autoAcceptAlerts", true);
 		if (getPlatform().equals("MPWA")) {
