@@ -7,7 +7,7 @@
 		<parameter name="runMode" value="${runMode}"/> <parameter name="runModule" 
 		value="${runModule}"/> <parameter name="browserType" value="${browserType}"/> -->
 
-	<parameter name="userType" value="NonSubscribedUser" />  <!-- Guest/NonSubscribedUser/SubscribedUser -->
+	<parameter name="userType" value="SubscribedUser" />  <!-- Guest/NonSubscribedUser/SubscribedUser -->
 	<parameter name="runModule" value="Suite" />
 	<parameter name="runMode" value="Suites" /> 
 
@@ -146,14 +146,14 @@
 			<class name="com.zee5.ApplicasterScripts.Android_AppLaunch" />
 		</classes>
 	</test>
-<!--  
+ 
 	 <test name="Android_Onboarding_Suite1">
 		<classes>
 			<class
 				name="com.zee5.ApplicasterScripts.Android_Onboarding_Suite1" />
 		</classes>
 	</test> 
- 
+ <!--  
 	<test name="Android_Onboarding_Suite2">
 		<classes>
 			<class
