@@ -183,6 +183,14 @@ public class Zee5ApplicasterBusinessLogic extends Utilities {
 		}
 	}
 
+	public void verifyAppLaunchTime() throws Exception {
+		extent.HeaderChildNode("Verify App Launch Time");
+		extent.extentLogger("User Type", "UserType : " + userType);
+		logger.info("UserType : " + userType);
+		verifyInvokationTime(5000);
+
+	}
+
 	/*
 	 * =============================================================================
 	 * ===== ------------------------------ Script Author: SHREE NIDHI

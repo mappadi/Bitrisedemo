@@ -1,5 +1,7 @@
 package com.zee5.ApplicasterScripts;
 
+import java.io.IOException;
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -14,6 +16,9 @@ public class Android_AppLaunch {
 
 	@BeforeTest
 	public void AppLaunch() throws InterruptedException {
+	
+		System.out.println("Installing the App..");
+		Thread.sleep(50000);
 		System.out.println("Launching Andriod App");
 		Utilities.relaunch = true;	// Clear App Data on First Launch
 		ZEE5ApplicasterBusinessLogic = new Zee5ApplicasterBusinessLogic("zee");

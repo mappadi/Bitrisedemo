@@ -109,6 +109,8 @@ public class Utilities extends ExtentReporter {
 
 	public static JavascriptExecutor js;
 
+	public static long diff;
+
 	public void initDriver() {
 		if (getPlatform().equals("Web")) {
 			wait = new WebDriverWait(getWebDriver(), getTimeout());
